@@ -8,7 +8,7 @@ TERMINAL
 
 
 GIT COMMANDS
-~ git clone 
+~ git clone https://github.com/olzhasmukayev/incubator (заменяет привычный git init, git add and etc) 
 ~ git status 
 ~ git pull
 ~ git push
