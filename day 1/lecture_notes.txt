@@ -6,7 +6,6 @@ TERMINAL
 ~ open filename.txt (opens the file) 
 ~ cat filename.txt (prints inside of the file)
 
-
 GIT COMMANDS
 ~ git clone https://github.com/olzhasmukayev/incubator (заменяет привычный git init, git add and etc) 
 ~ git status 
@@ -14,3 +13,5 @@ GIT COMMANDS
 ~ git push
 ~ git add 
 ~ git commit -m "initial commit"
+
+
