@@ -1,0 +1,16 @@
+day 1 - terminal and git 
+
+TERMINAL
+~ pwd -> print working directory (where you at)
+~ touch filename.txt (creates a new file)
+~ open filename.txt (opens the file) 
+~ cat filename.txt (prints inside of the file)
+
+
+GIT COMMANDS
+~ git clone 
+~ git status 
+~ git pull
+~ git push
+~ git add 
+~ git commit -m "initial commit"
