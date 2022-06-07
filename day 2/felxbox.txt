@@ -1,0 +1,16 @@
+display: felx; -> gives the elements inside of the container the axis of x
+flex-direction: column; -> elements that are inside of the container change the axis to column, elements are positioned in the column like position, from up to bottom
+flex-direction: row; -> elements are now position row like (the default) 
+elements that are inside of the container can have the order using the order property
+giving the first div the order: 3;, will make the 1st div, 3rd -> the default value for the order is 1 for all elements, and the element with the biggest order is going to the end of the container
+jusify-content: flex-start, flex-end, center; -> aligns items in the container by their main axis 
+jusify-content: space-between; -> space between the objects, not from the end and start, space-around -> with start and end
+align-items: flex-start, center, flex-end; -> align items by the secondary axis 
+
+align-self: center, flex-start, flex-end; -> align only one particular item, not the container 
+
+
+flex-wrap: wrap; -> the property for the container if the elements inside of the container is not fitting to the screen 
+flex-basis: 33%; -> the property for the element only, not the container, which decides the (size of the main axis) of the element 
+flex-shrink: 2; -> the property for the element only, to make it shrink 2 times faster than other elements when the size of the window is decreaing 
+flex-grow: 1; -> the property for the elemenet only, to make the element have the space more, if 3 elements on the screen, and 2 other have felx-grow: 1, the 2nd element which has flex-grow: 2; will have 2/4 the space of the container
