@@ -1,0 +1,139 @@
+body {
+  margin: 20px 40px;
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 16px;
+}
+
+/*--- This is the CSS class for the green rectangular blocks. Note that it uses display: flex ---*/
+.wrapper {
+  display: flex;
+  height: 60px;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+/*--- flex: 1 makes it so that the div takes up all available space left in the parent element ---*/
+.redExample {
+  flex: 1;
+  background-color: red;
+}
+
+/*--- Since both .redExample and .blueExample have flex: 1, they will take up an equal amount of space because they meet in the middle ---*/
+.blueExample {
+  flex: 1;
+  background-color: blue;
+}
+
+/*--- flex-direction: row-reverse orders all child elements starting from right to left ---*/
+.emptyExample2 {
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+}
+
+.blueExample2 {
+  width: 80px;
+  background-color: blue;
+}
+
+/* TODO: Add CSS for the rest of your solution below */
+
+.row_3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row__3_1 {
+  width: 80px;
+  background-color: red;
+}
+
+.row__3_2 {
+  width: 80px;
+  background-color: blue;
+}
+
+/* row 4 */
+.row_4 {
+  background-color: red;
+  flex-direction: row-reverse;
+}
+
+.row__4_1 {
+  width: 80px;
+  background-color: blue;
+}
+
+/* row 5 */
+
+.row_5 { 
+  background-color: green;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row__5_1 {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
+
+/* row 6 */
+
+.row_6 {
+  justify-content: center;
+}
+
+.row__6_1 {
+  height: 60px;
+  width: 80px;
+  background-color: blue;
+}
+
+/* row 7 */
+
+.row_7 {
+  background-color: blue;
+}
+
+.row__7_1 {
+  width: 80px;
+  background-color: red;
+}
+
+.row__7_2 {
+  background-color: green;
+  height: 15px;
+  align-self: center;
+  flex: 1; 
+}
+
+/* row 8 */
+
+.row_8 {
+  background-color: green;
+  justify-content: space-between;
+}
+
+.row__8 {
+  width: 80px;
+  background-color: orange;
+}
+
+/* row 9 */
+
+.row_9 {
+  background-color: orange;
+  justify-content: space-around;
+}
+
+.row__9 {
+  width: 30px;
+  background-color: green;
+}
