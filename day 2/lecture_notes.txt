@@ -1,0 +1,137 @@
+variables -> let var_name; -> can take any type 
+constant variable -> const var_name -> the unchangable variable type
+
+let product = { -> object 
+	name: "banan",
+	price: 800
+}
+console.log(product.name); 
+
+
+product.label = "red" -> create
+delete product.label -> remove 
+
+product["origin"] = "Brazill" -> another way to create an object 
+object value can take the variable 
+
+product.print = function() { -> objects can take functions inside 
+	console.log("fruit"); 
+} 
+
+console.log("name" in product); -> is inside? 
+
+for (key in product) {
+	console.log(key);
+}
+
+let fruits = [
+	"apple",
+	"mango", 
+	"banan"
+]
+
+fruits.length() -> prints the size of the array 
+fruits.push("grape") -> adds the value to the array
+fruits.shift -> adds element to the begining 
+fruits.unshift -> removes the first variable
+let array = array.concatonate(array2) -> merge two arrays 
+
+if (a == b) -> не строгое сравнение 
+if (a === b) -> строгое сравнение
+
+let customer = "Aidar"
+let select;
+let finalFruit = select ?? "orange";
+finalFruit -> returns if nothing was selected
+
+let selectFruit; 
+if (selectFruit) { -> if exists, true for everything and empty objects
+	console.log("buy"); 
+}
+
+
+function countNumber() { -> length of the object
+	console.log(groceries.length); 
+}
+
+groceries.includes(product); if product contains in the groceries
+
+
+let a = "", '', ``; -> in `` can use variables -> let a = `${b}`
+function show(name, price) { 
+	console.log(`${name} costs ${price}`);
+}
+
+function show(fruit) { 
+	console.log(`${fruit.name} costs ${fruit.price}`);
+}
+
+function show({ name, price }) {
+	console.log(`${name} costs ${price}`);
+}
+show(product); -> gets the object and destructors it
+
+function show( { name: n, price: p } ) {
+	console.log(`${n} costs ${p}`);
+}
+
+let counter = function() { -> function expression
+	console.log(groceries.length);
+}
+
+let canBuy = (product) => 
+	return groceries.includes(product); 
+
+
+let fruitsArray = ["apple", "orange", "apple", "orange"];
+let oranges = fruits.filter( (fruits) => fruit === orange );
+now oranges has only oranges 
+
+
+
+let groceries = ["apple", "orange", "apple", "orange"];
+let freshOnes = groceries.map((fruit) => `color ${fruit}`);
+["color apple", "color orange", "color apple", "color orange"];
+
+
+function buy(card, price, ...groceriesArray) {
+	console.log(`buy ${groceries} with ${card} for ${price}`);
+}
+
+
+let { firstNmae, age, ...otherInfo } = { -> rest 
+	firstName: "Dalida",
+	age: 18,
+	companyName: "shop",
+	profession: "cashier"
+};
+
+otherInfo > has companyName and profession
+
+
+const myNmae = "beknar"
+console.log([...myName])
+> b,e,k,n,a,r
+
+const greeting = ["dalida", "otherInfo"]
+const aboutMe = ["hi", ...greeting, "what?"];
+now aboutMe array have dalida and other
+
+_____
+e.js file 
+
+let countGroc = () => groceries.length();
+let canBuyProcut = (procuct) => groceries.includes(product);
+
+// Named import
+export { countGroc, canBuyProdcut };
+export { countGroc as c, canBuyProdcut as b}
+export default arbuz = "arbuz";
+
+_____
+g.js file 
+
+import { countGroc, canBuyProduct } from "./e.js";
+import { c, b } from "./e.js";
+import arbuz from "./e.js"; 
+
