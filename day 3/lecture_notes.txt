@@ -1,0 +1,6 @@
+day 3 -> DOM with js 
+
+the idea generation: 
+    - build the product that will work even without users
+    - product hunt, ycombinator, indiehackers.com 
+    - excel -> idea -> difficulty and impact 
