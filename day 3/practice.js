@@ -25,3 +25,25 @@ newPhone = "Iphone 13";
 console.log(`${customer.toUpperCase()} has a new phone which is ${newPhone}`);
 
 
+console.log("\n\n");
+
+let currentWeather = "sunny"; 
+let itemWithMe = "glasses";
+
+if (currentWeather === "sunny" && itemWithMe === "glasses") {
+    console.log(`You are good to go, because the weather is ${currentWeather}, but make sure that you have taken ${itemWithMe}\n`);
+} else if (currentWeather === "sunny" && itemWithMe !== "glasses") {
+    console.log(`You can go outside, but u dont have glasses, so your eyes will heart\n`);
+} else {
+    console.log(`Wheather is not good, it's ${currentWeather}, please stay home \n`);
+}
+
+let balance = 10000;
+let salary = 5000; 
+let workDone = false; 
+
+if (workDone) {
+    balance += salary;
+} else {
+    console.log(`you should do your work`);
+}
