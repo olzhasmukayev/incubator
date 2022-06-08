@@ -5,6 +5,7 @@ elements that are inside of the container can have the order using the order pro
 giving the first div the order: 3;, will make the 1st div, 3rd -> the default value for the order is 1 for all elements, and the element with the biggest order is going to the end of the container
 jusify-content: flex-start, flex-end, center; -> aligns items in the container by their main axis 
 jusify-content: space-between; -> space between the objects, not from the end and start, space-around -> with start and end
+justify-content: space-evenly; -> like space-around, but the space is the same with outher items on the edges
 align-items: flex-start, center, flex-end; -> align items by the secondary axis 
 
 align-self: center, flex-start, flex-end; -> align only one particular item, not the container 
