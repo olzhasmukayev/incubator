@@ -32,3 +32,4 @@ tracker.habbits.drinking = "no";
 
 console.log(`User health information with id - ${userId}\n`);
 console.log(tracker);
+// hell
