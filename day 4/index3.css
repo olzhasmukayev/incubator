@@ -1,0 +1,29 @@
+select {
+    color: black;
+}
+
+.container {
+    width: 300px;
+    background-color: yellow;
+    height: 100px;
+    padding: 20px;
+    margin: 50px auto;
+    color: black;
+}
+
+#result {
+    font-size: 20pt;
+    vertical-align: center;
+    line-height: 100px;
+    text-align: center;
+}
+
+button {
+    background-color: peachpuff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px; 
+    margin-top: 35px;
+    margin-left: 20px;
+}
