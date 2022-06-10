@@ -40,9 +40,9 @@ console.log("Playing the game, randomizer from 1 to 100\n");
 let targetNumber = 69; 
 console.log("Target Value is " + targetNumber + "\n");
 
-let guess = Math.floor(Math.random() * 100) + 1;
+let guess = Math.floor(Math.random() * 10000) + 1;
 while (guess !== targetNumber) {
-    guess = Math.floor(Math.random() * 100) + 1;
+    guess = Math.floor(Math.random() * 10000) + 1;
     console.log(`Target -> ${targetNumber} | Guess -> ${guess}\n`);
 }
 
