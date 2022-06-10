@@ -49,3 +49,41 @@ function deal(numberOfPlayers) {
 }
 
 deal(10);
+
+// working with function more advanced concepts 
+// making console STEPN for ROFL
+
+// logic: 
+/*
+    1) there types of snekers 
+    2) the power regenerates after some time 
+    3) to earn money should run and spend time 
+    4) save money to the wallet
+*/
+
+const sneakers = {
+    "adidas" : 100, 
+    "nike" : 200,
+    "new balance" : 150, 
+    "puma" : 50
+}
+
+const runners = ["adidas", "nike", "new balance", "puma"];
+
+let wallet = 0;
+
+function run(sneaker, powerLeft) {
+    return function (dailyBonus) {
+        return powerLeft + dailyBonus;
+    }
+} 
+for (let i = 0; i < 10; i++) {
+    console.log(`day ${i + 1} - `);
+    for (let s of runners) {
+        const dailyRun = run(s, sneakers.adidas);  
+        console.log(`running with ${s}\n`)
+        wallet += dailyRun(Math.floor(Math.random() * 100) + 1);
+    }
+}
+
+console.log(wallet);
