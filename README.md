@@ -14,3 +14,6 @@ day #4
 
 day #5
   ~ woking with npm and storage
+
+day #6 
+  ~ practicing the js functions, and starting learning the DOM by hard 
