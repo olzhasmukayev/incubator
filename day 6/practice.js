@@ -223,4 +223,120 @@ const funWithDef = (x, y = 0) => {
 }
 
 let resultOfSum = funWithDef(1);
+
 console.log(resultOfSum);
+
+// working with the spread and rest function things & dustructing objects/arrays 
+
+// spread - is commonly used to fill the numbers of the array/object to make a new one, the copy
+
+// spread in when passing to the function, that can take up to ...N arguments 
+
+const numsForMax = [1, 2, 123, 24525, 12312, 1001, 1124, 1234, 1, 9, 0, -444, 1];
+
+const findMaxSpread = (arrSpread) => {
+    return Math.max(...arrSpread); // return the maximum value among the elements in the array that we pass with N elements 
+};
+
+const maxSpreadVal = findMaxSpread(numsForMax);
+console.log(maxSpreadVal);
+
+// spread when using it in the array 
+
+const firstNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const secondNums = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
+
+const resArr = [...firstNums, ...secondNums];
+console.log(resArr);
+
+// spread when using it in the object 
+
+const objList = {
+    'Olzhas' : 1, 
+    'Sula' : 2, 
+    'Anel' : 3, 
+    'Yern' : 4
+}
+
+const copyObjList = {
+    'admin' : 0,    
+    ...objList
+};
+
+console.log(copyObjList);
+
+// const errorTest = [...objList]; -> cannot do this 
+// console.log(errorTest);
+
+const arrInObj = {...firstNums}; // spread the values with the key by it index
+console.log(arrInObj);
+
+// rest -> makes the function take N arguments
+
+const multiply = (initial, ...arrgs) => { // now arrgs is an array 
+    return arrgs.reduce((total, val) => {
+        total *= val;
+        return total;
+    }); 
+}
+
+let resMult = multiply(10000, 2, 3, 5, 6, 7, 8, 9, 10);
+console.log(resMult);
+
+// practicing the destructing things 
+
+const medalist = ['Olzhas', 'Ars', 'Miko', 'Sulya'];
+const [gold, silver, bronze, ...others] = medalist;
+console.log(gold);
+console.log(silver);
+console.log(bronze);
+console.log(others);
+
+// destructings with the objects 
+
+const ratingLeetCode = {
+    onel : "Olzhas",
+    twol : "Ars", 
+    treel : "Moti", 
+    fourl : "Sula"
+}
+
+const {onel, twol} = ratingLeetCode;
+console.log(onel);
+console.log(twol);
+
+// destructing as parametrs
+
+const info = [];
+
+const desFun = ({firstName, secondName}) => {
+    info.push(firstName);
+    info.push(secondName);
+}
+
+const objInfoDef = {
+    firstName : "Olzhas", 
+    secondName : "Mukayev",
+    rating : 100
+}
+
+desFun(objInfoDef);
+
+console.log(info);
+
+// nested destructors 
+
+const nested = [
+    {
+        name : "olzhas"
+    }, 
+    {
+        name : "yernar"
+    }
+];
+
+const [, {name}] = nested;
+console.log(name);
+
+// forEach (doesn't return), map (returns new array), find(finds), filter (true false then add certain), sort, reduce, some, every, spread, rest, destructors
+
