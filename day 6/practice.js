@@ -222,5 +222,5 @@ const funWithDef = (x, y = 0) => {
     return x + y; // sum of the two numbers 
 }
 
-let resultOfSum = funWithDef(1, 5);
+let resultOfSum = funWithDef(1);
 console.log(resultOfSum);
