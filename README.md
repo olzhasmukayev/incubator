@@ -17,3 +17,6 @@ day #5
 
 day #6 
   ~ practicing the js functions, and starting learning the DOM by hard 
+
+day #7 
+  ~ end the last section about `this` and start doing the DOM with JS
