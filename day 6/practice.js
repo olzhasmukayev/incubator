@@ -215,3 +215,12 @@ const ratingRes = (booksList) => {
 
 const resObj = ratingRes(books);
 console.log(resObj);
+
+// working with the default paramentrs in the argument 
+
+const funWithDef = (x, y = 0) => {
+    return x + y; // sum of the two numbers 
+}
+
+let resultOfSum = funWithDef(1, 5);
+console.log(resultOfSum);
