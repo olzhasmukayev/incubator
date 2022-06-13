@@ -1,0 +1,20 @@
+.create-post-wrapper {
+    position: absolute;
+    top: 70px;
+}
+
+.profile-image {
+    width: 50px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper input {
+    border: none;
+    outline: none;   
+}
