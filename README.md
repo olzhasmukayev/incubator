@@ -20,3 +20,6 @@ day #6
 
 day #7 
   ~ end the last section about `this` and start doing the DOM with JS
+
+day #8
+  ~ intro to react
