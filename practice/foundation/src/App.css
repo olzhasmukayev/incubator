@@ -1,0 +1,25 @@
+.center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.black {
+    background-color: grey;
+}
+
+.white {
+    background-color: white;
+}
+
+.posts {
+    text-align: center;
+}
